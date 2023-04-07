@@ -1,0 +1,11 @@
+$mainColor: #7777bb;
+
+.comp {
+    background: $mainColor;
+
+    // nested css - targets h1 insdie .comp
+
+h1 {
+    text-transform: uppercase;
+}
+}
