@@ -1,5 +1,22 @@
 
 
+### Type Alias
+
+```typescript
+type NumT = {
+    age: 6
+}
+
+let num3: NumT = {
+    age: 7
+}; // needs to be 6
+```
+
+
+
+
+
+
 What is the difference between these statements (interface vs type-alias)?
 
 ```js
@@ -23,9 +40,9 @@ Type - you can't add more props later
 Extending an interface
 
 ```
-interface Animal {  name: string } 
-interface Bear extends Animal {  honey: boolean } 
-const bear = getBear()  
+interface Animal {  name: string }
+interface Bear extends Animal {  honey: boolean }
+const bear = getBear()
 bear.name bear.honey
 ```
 
@@ -36,8 +53,8 @@ type Animal = {
   name: string
 }
 
-type Bear = Animal & { 
-  honey: boolean 
+type Bear = Animal & {
+  honey: boolean
 }
 
 const bear = getBear();
@@ -76,7 +93,7 @@ type Window = {
 
 **type alias**
 
-- creating a new name for an existing type: 
+- creating a new name for an existing type:
 
  ```
 type Point = {
