@@ -8,10 +8,9 @@
 
 These tools check your code for correctness, style, or consistency. They don’t change your code (unless auto-fix is enabled), but enforce rules.
 
-File	Tool	Purpose
-.eslintrc	ESLint	Lints JavaScript/TypeScript for bugs and code quality issues
-.prettierrc	Prettier	Formats code for consistent style
-.stylelintrc (optional)	Stylelint	Lints CSS or styled components
+- ESLint: Lints JavaScript/TypeScript for bugs and code quality issues (.eslintrc)
+- Prettier: Formats code for consistent style (.prettierrc)
+- Stylelint: Lints CSS or styled components (.stylelintrc)
 
 ➡️ Think of these as “rule enforcers” — they check that your code meets team or industry standards.
 
@@ -21,9 +20,9 @@ File	Tool	Purpose
 
 These convert your source code into a different form — for example, converting modern JavaScript or TypeScript into browser-compatible code.
 
-File	Tool	Purpose
-.babelrc	Babel	Transpiles modern JS (ES6+) to ES5
-tsconfig.json	TypeScript	Compiles TypeScript into JavaScript
+
+- Babel: 	Transpiles modern JS (ES6+) to ES5 (.babelrc)
+- TypeScript: 	Compiles TypeScript into JavaScript	(tsconfig.json	)
 
 	•	Transpilers: Convert between versions of the same language (e.g. ES6 → ES5).
 	•	Compilers: Convert from one language to another (e.g. TypeScript → JavaScript).
@@ -36,9 +35,9 @@ tsconfig.json	TypeScript	Compiles TypeScript into JavaScript
 
 These files define your project’s metadata, dependencies, and available scripts.
 
-File	Tool	Purpose
-package.json	npm/yarn	Lists packages, scripts, and project info
-package-lock.json / yarn.lock	npm/yarn	Locks down versions for repeatable installs
+
+package.json: Lists packages, scripts, and project info
+package-lock.json: Locks down versions for repeatable installs
 
 ➡️ These belong to a “Package Management” category.
 
@@ -48,11 +47,11 @@ package-lock.json / yarn.lock	npm/yarn	Locks down versions for repeatable instal
 
 These tools bundle and optimize your application source code and assets into files that can run in the browser.
 
-File	Tool	Purpose
-webpack.config.js	Webpack	Defines how modules are bundled
-vite.config.js	Vite	Lightweight alternative to Webpack
-next.config.js	Next.js	App-specific build and runtime behavior
-rollup.config.js	Rollup	Used for bundling libraries (often ESM-based)
+
+Webpack	Defines how modules are bundled / webpack.config.js	
+Vite	Lightweight alternative to Webpack / vite.config.js	
+Next.js	App-specific build and runtime behavior / next.config.js	
+Rollup	Used for bundling libraries (often ESM-based) / rollup.config.js	
 
 ➡️ Category name: “Bundlers & Build Tools”
 These tools control the build pipeline and how modules get resolved, transformed, and shipped.
@@ -74,22 +73,7 @@ index.html	Vite/Webpack	HTML template for injecting the app bundle
 
 These configure local development servers, environment variables, and runtime behavior (not app logic itself).
 
-File	Tool	Purpose
 run-dev-server	(custom script)	Starts a dev server (e.g., Webpack, Vite)
 vite.config.js	Vite	(also under bundlers — overlaps)
 .env, .env.local	Env variables	Define runtime values like API keys, etc.
-
-➡️ Category name: “Development Environment / Runtime Config”
-
-⸻
-
-✅ Summary of Categories
-
-Category	What it includes
-Checkers	Linting, formatting, code style rules
-Compilers & Transpilers	Babel, TypeScript — turning one form of code into another
-Package Management	package.json, lock files — project dependencies
-Bundlers & Build Tools	Webpack, Vite, Rollup configs — for production builds
-HTML Shell / Entry Point	Base HTML file that bootstraps the app
-Dev Environment / Runtime	Dev server configs, env variables, runtime settings
 
